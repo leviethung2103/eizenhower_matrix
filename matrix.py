@@ -18,7 +18,7 @@ st.set_page_config(layout="wide")
 # )
 
 # Replace the API Key
-TODOIST_API_KEY = ""
+TODOIST_API_KEY = st.secrets['todoist_api_key']
 api = TodoistAPI(TODOIST_API_KEY)
 
 assert len(TODOIST_API_KEY) != 0
